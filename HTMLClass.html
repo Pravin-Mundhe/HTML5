@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Third</title>
+
+</head>
+<body>
+
+<button onclick="myFunction()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>dcsdfs</p>
+
+<h2 class="city">Paris</h2>
+<p>dcsdfs</p>
+
+<script>
+  function myFunction() {
+    var x=document.getElementsByClassName("city");
+    for(var i=0;i<x.length;i++)
+      x[i].style.display="none";
+  }
+</script>
+<button onclick="myFunction1()">Show elements</button>
+
+<script>
+  function myFunction1() {
+    var x=document.getElementsByClassName("city");
+    for(var i=0;i<x.length;i++) {
+      x[i].style.display = "contents";
+    }
+  }
+</script>
+</body>
+</html>
